@@ -1,4 +1,4 @@
-package com.report.service.config;
+package com.indeed.server.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -13,14 +13,5 @@ public class MongoConfig {
     @Bean
     public MongoTemplate mongoTemplate(MongoDatabaseFactory mongoDbFactory, MappingMongoConverter converter) {
         return new MongoTemplate(mongoDbFactory, converter);
-    }
-
-    @Configuration
-    @EnableMongoAuditing
-    public static class MongoConfig {
-        @Bean
-        public MongoTemplate mongoTemplate(MongoDatabaseFactory mongoDbFactory, MappingMongoConverter converter) {
-            return new MongoTemplate(mongoDbFactory, converter);
-        }
     }
 }
