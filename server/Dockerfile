@@ -8,6 +8,8 @@ COPY src src
 
 # Make the mvnw script executable
 RUN chmod +x mvnw
+# dos2unix is used to convert the windows line endings to unix line endings
+RUN dos2unix mvnw
 
 RUN ./mvnw install -DskipTests
 RUN mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)
