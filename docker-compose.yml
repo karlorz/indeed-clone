@@ -31,7 +31,10 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: "root"
       MONGO_INITDB_ROOT_PASSWORD: "examplepassword"
-#    volumes: #
-#      - $HOME/mongo:/data/db
+    volumes: #
+      - indeedmongo:/data/db
     healthcheck:
       test: "exit 0"
+
+volumes:
+  indeedmongo:
