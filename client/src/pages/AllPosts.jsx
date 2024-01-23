@@ -4,6 +4,7 @@ import { Search as SearchIcon } from '@mui/icons-material';
 import Header from '../components/Header';
 import { getAllPosts } from '../services/api';
 
+
 const SearchContainer = styled(Box)({
     marginTop: 74,
     display: 'flex',

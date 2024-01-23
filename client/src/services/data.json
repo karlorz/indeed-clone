@@ -1,0 +1,13 @@
+[
+    {
+        "profile": "tes",
+        "type": "Online",
+        "description": "test",
+        "experience": "0-2 Years",
+        "technology": [
+            "React"
+        ],
+        "salary": "Rs 500000-800000",
+        "createdAt": "2024-01-23T07:32:05.259+00:00"
+    }
+]
