@@ -23,7 +23,9 @@ export const savePost = async (payload) => {
 
 export const getAllPosts = async () => {
     try {
-        return await axios.get(`${getApiUrl()}/posts`);
+        const response = await axios.get(`${getApiUrl()}/posts`);
+        console.log('getAllPosts response: ', response); // Add this line for debugging
+        return response;
     } catch (error) {
         console.log('Error: ', error.message);
         return error.response.data;

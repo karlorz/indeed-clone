@@ -9,5 +9,16 @@
         ],
         "salary": "Rs 500000-800000",
         "createdAt": "2024-01-23T07:32:05.259+00:00"
+    },
+    {
+        "profile": "java2",
+        "type": "Offline",
+        "description": "erer",
+        "experience": "0-2 Years",
+        "technology": [
+            "Angular"
+        ],
+        "salary": "Rs 800000-1000000",
+        "createdAt": "2024-01-24T07:04:31.144+00:00"
     }
 ]

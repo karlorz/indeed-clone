@@ -17,7 +17,7 @@
     "react-router-dom": "^6.20.1"
   },
   "scripts": {
-    "start": "vite --host",
+    "start": "vite --host -l info",
     "build": "vite build",
     "serve": "vite preview"
   },

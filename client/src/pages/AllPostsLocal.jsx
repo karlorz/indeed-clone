@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Box, InputBase, Button, styled, Card, CardContent, Typography } from '@mui/material';
 import { Search as SearchIcon } from '@mui/icons-material';
 import Header from '../components/Header';
-import createDataProvider from '../services/dataProviderConfig';
+import {getAllPosts} from '../services/dataJson';
 
 
 const SearchContainer = styled(Box)({
@@ -52,9 +52,9 @@ const AllPostsLocal = () => {
     const [text, setText] = useState("");
 
     useEffect(() => {
-        const { getPosts } = createDataProvider();
+        // const { getPosts } = createDataProvider();
         const getData = async () => {
-            const response = await getPosts();
+            const response = await getAllPosts();
             setPosts(response.data);
         }
         getData();
