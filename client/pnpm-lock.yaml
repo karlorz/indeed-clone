@@ -41,9 +41,6 @@ dependencies:
   react-router-dom:
     specifier: ^6.20.1
     version: 6.21.3(react-dom@18.2.0)(react@18.2.0)
-  web-vitals:
-    specifier: ^2.1.4
-    version: 2.1.4
 
 devDependencies:
   '@vitejs/plugin-react':
@@ -2612,10 +2609,6 @@ packages:
     optionalDependencies:
       fsevents: 2.3.3
     dev: true
-
-  /web-vitals@2.1.4:
-    resolution: {integrity: sha512-sVWcwhU5mX6crfI5Vd2dC4qchyTqxV8URinzt25XqVh+bHEPGH4C3NPrNionCP7Obx59wrYEbNlw4Z8sjALzZg==}
-    dev: false
 
   /which-boxed-primitive@1.0.2:
     resolution: {integrity: sha512-bwZdv0AKLpplFY2KZRX6TvyuN7ojjr7lwkg6ml0roIy9YeuSr7JS372qlNW18UQYzgYK9ziGcerWqZOmEn9VNg==}

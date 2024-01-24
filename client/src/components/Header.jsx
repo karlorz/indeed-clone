@@ -25,6 +25,7 @@ const Header = () => {
                 </Link>
                 <Link to={routePath.create}>Post a job</Link>
                 <Link to={routePath.posts}>Find jobs</Link>
+                <Link to={routePath.demo}>Demo</Link>
             </Toolbar>
         </StyledAppBar>
     )
