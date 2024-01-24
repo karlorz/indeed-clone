@@ -52,7 +52,6 @@ const AllPostsLocal = () => {
     const [text, setText] = useState("");
 
     useEffect(() => {
-        // const { getPosts } = createDataProvider();
         const getData = async () => {
             const response = await getAllPosts();
             setPosts(response.data);

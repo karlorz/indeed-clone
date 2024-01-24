@@ -22,7 +22,7 @@ export const getAllPosts = async () => {
     try {
         // Instead of making an API call, resolve with the local data
         const response = Promise.resolve({ data });
-        console.log('getAllPosts response: ', response); // Add this line for debugging
+        // console.log('getAllPosts response: ', response); // Add this line for debugging
         return response;
     } catch (error) {
         console.log('Error getting posts: ', error.message);
