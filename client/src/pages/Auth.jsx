@@ -12,14 +12,14 @@ const Auth = () => {
   const registerUser = async () => {
     try {
       const response = await axios.post('http://localhost:8080/api/v1/auth/register', {
-        firstname: 'Ali',
-        lastname: 'Bouali',
-        email: 'alibou21@mail.com',
+        firstname: 'user',
+        lastname: 'user',
+        email: 'user@user.com',
         password: 'password',
       });
 
       setAuthToken(response.data.access_token);
-      console.error('Registered user successfully!');
+      console.log('Registered user successfully! token:', response.data.access_token);
     } catch (error) {
       console.error('Error registering user:', error);
     }
@@ -28,7 +28,7 @@ const Auth = () => {
   // Function to query the demo endpoint
   const queryDemoEndpoint = async () => {
     try {
-      const response = await axios.get('http://localhost:8080/api/v1/demo-controller', {
+      const response = await axios.get('/api/v1/demo-controller', {
         headers: {
           Authorization: `Bearer ${authToken}`
         }
