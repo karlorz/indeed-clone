@@ -5,5 +5,6 @@ export const routePath = {
     posts       : '/posts',
     create      : '/create',
     demo       : '/demo',
+    auth       : '/auth',
     invalid     : '/*' 
 }
